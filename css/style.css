@@ -1,16 +1,16 @@
 @font-face {
-  font-family: 'KerakNeraka';
-  src: url('./KerakNeraka-8Oaoz.otf');
+  font-family: 'comicsansbold';
+  src: url('./Ldfcomicsansbold-zgma.ttf');
   font-weight: normal;
   font-style: normal;
 }
 
 :root {
-  --color-bg: rgba(103, 157, 157, 0.587);
+  --color-bg: rgb(227, 17, 17);
   --color-fg: #fff;
 
-  --font-body: sans-serif;
-  --font-header: 'KerakNeraka', sans-serif;
+  --font-body: "Comic Sans MS";
+  --font-header: com;
 
   --step--2: clamp(0.6331rem, 0.6141rem + 0.0949vw, 0.6877rem);
   --step--1: clamp(0.844rem, 0.7993rem + 0.2234vw, 0.9724rem);
@@ -33,6 +33,7 @@ body {
     place-items: center;
     background-color: var(--color-bg);
     z-index: -1;
+    background-image: url(images.png);   
 }
 
 main {
@@ -44,15 +45,17 @@ main {
 h1 {
     font-size: var(--step-5);
     line-height: 1;
-    color: var(--color-fg);
+    color: green;
     font-family: var(--font-header);
     letter-spacing: .1em;
+    margin-right: 0;
 }
 
 p {
     font-size: var(--step-2);
-    color: var(--color-fg);
+    color: green;
     font-family: var(--font-body);
+    
 }
 
 canvas {
@@ -61,3 +64,8 @@ canvas {
     left: 0;
     z-index: 0;
 }
+
+url{
+    opacity: 50%;
+}
+
