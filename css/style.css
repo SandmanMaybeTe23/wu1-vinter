@@ -33,7 +33,9 @@ body {
     place-items: center;
     background-color: var(--color-bg);
     z-index: -1;
-    background-image: url(images.png);   
+    background-image: url(images.png); 
+    animation-timing-function: linear;  
+    animation: mymove 5s infinite;
 }
 
 main {
@@ -45,17 +47,23 @@ main {
 h1 {
     font-size: var(--step-5);
     line-height: 1;
-    color: rgb(0, 255, 0);
+    color: rgb(255, 255, 255);
     font-family: var(--font-header);
     letter-spacing: .1em;
     margin-right: 0;
+    margin-bottom: 0;
+    border:solid white ;
+    background-color: rgb(255, 0, 0) ;
+    padding: 20px;
 }
 
 p {
     font-size: var(--step-2);
-    color: rgb(0, 255, 0);
+    color: rgb(255, 255, 255);
     font-family: var(--font-body);
-    
+    border: solid white ;
+    background-color: rgb(255, 0, 0);
+    padding: 5px;
 }
 
 canvas {
@@ -65,7 +73,12 @@ canvas {
     z-index: 0;
 }
 
-url{
-    opacity: 50%;
+@keyframes mymove{
+    0% {background-color: red;}
+    50% {background-color: green;}
+    100% {background-color: red;}
 }
+
+
+
 
